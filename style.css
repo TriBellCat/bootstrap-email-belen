@@ -9,22 +9,17 @@
 .bi {
     max-width: 16px;
     max-height: 16px;
-    color: white;
+    color: #ed5757;
 }
 
-.red-color {
-    color:#ed5757;
+.bi-heart-pulse {
+    color: white;
 }
 
 /*Website Name*/
 .website-name {
-    color:white;
-    font-family:monospace;
-}
-
-/* Search Bar */
-.input-group-text {
-    color: white
+    color: white;
+    font-family: monospace;
 }
 
 .search-input {
@@ -45,10 +40,7 @@
     background-color: lightgray;
 }
 
-
-
-
-
-
-
-
+/** Navigation Column **/
+.navigation-lists {
+    font-family: monospace;
+}
