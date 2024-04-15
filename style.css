@@ -1,0 +1,54 @@
+/*** Navigation Bar Elements ***/
+
+/*Navbar*/
+.navbar {
+    background-color: #ed5757;
+}
+
+/*Icons*/
+.bi {
+    max-width: 16px;
+    max-height: 16px;
+    color: white;
+}
+
+.red-color {
+    color:#ed5757;
+}
+
+/*Website Name*/
+.website-name {
+    color:white;
+    font-family:monospace;
+}
+
+/* Search Bar */
+.input-group-text {
+    color: white
+}
+
+.search-input {
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+/* Compose Button */
+.compose-button {
+    background-color: white;
+    border-color: transparent;
+    font-family: monospace;
+    color: #ed5757;
+    border-radius: 12px;
+}
+
+.compose-button:hover {
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
