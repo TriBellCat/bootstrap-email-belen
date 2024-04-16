@@ -16,7 +16,10 @@
     color: white;
 }
 
-/*Website Name*/
+.bi-tools {
+    color: #D3D3D3;
+}
+
 .website-name {
     color: white;
     font-family: monospace;
@@ -27,7 +30,6 @@
     border-radius: 8px;
 }
 
-/* Compose Button */
 .compose-button {
     background-color: white;
     border-color: transparent;
@@ -43,4 +45,32 @@
 /** Navigation Column **/
 .navigation-lists {
     font-family: monospace;
+}
+
+/* Inbox Column */
+.inbox-box {
+    gap:20px;
+    font-family:monospace;
+}
+
+.inbox-subject {
+    display: flex;
+    height: auto;
+    max-width: 100%; 
+    justify-content:space-between;
+}
+
+/* Message Column */
+.message-pfp-border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.message-pfp {
+    background-image: url('https://www.stockvault.net/data/2010/11/24/116240/thumb16.jpg');
 }
