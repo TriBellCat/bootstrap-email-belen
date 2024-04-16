@@ -1,14 +1,22 @@
-/*** Navigation Bar Elements ***/
+.border-divider {
+    border-left: 1px solid lightgray;
+}
 
-/*Navbar*/
-.navbar {
-    background-color: #ed5757;
+* {
+    font-family: monospace;
+}
+
+@media all and (max-width: 600px) {
+    /*Hide border when in mobile mode*/
+    .border-divider {
+        border-left: transparent;
+    }
 }
 
 /*Icons*/
 .bi {
-    max-width: 16px;
-    max-height: 16px;
+    max-width: 20px;
+    max-height: 20px;
     color: #ed5757;
 }
 
@@ -20,9 +28,15 @@
     color: #D3D3D3;
 }
 
+/*** Navigation Bar Elements ***/
+
+/*Navbar*/
+.navbar {
+    background-color: #ed5757;
+}
+
 .website-name {
     color: white;
-    font-family: monospace;
 }
 
 .search-input {
@@ -33,7 +47,6 @@
 .compose-button {
     background-color: white;
     border-color: transparent;
-    font-family: monospace;
     color: #ed5757;
     border-radius: 12px;
 }
@@ -42,29 +55,16 @@
     background-color: lightgray;
 }
 
-/** Navigation Column **/
-.navigation-lists {
-    font-family: monospace;
-}
-
 /* Inbox Column */
 .inbox-box {
-    gap:20px;
-    font-family:monospace;
-}
-
-.inbox-subject {
-    display: flex;
-    height: auto;
-    max-width: 100%; 
-    justify-content:space-between;
+    gap: 20px;
 }
 
 /* Message Column */
 .message-pfp-border {
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 0%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -74,3 +74,4 @@
 .message-pfp {
     background-image: url('https://www.stockvault.net/data/2010/11/24/116240/thumb16.jpg');
 }
+

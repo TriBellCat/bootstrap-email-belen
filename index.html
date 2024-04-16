@@ -20,99 +20,103 @@
     <div class="container-fluid p-0 m-0">
         <!-- Navigation bar -->
         <div class="navbar">
-            <!-- Website Name -->
-            <div class="col-xl website-name">
-                <i class="bi bi-heart-pulse change-to-white"></i>
-                Postal Pulse
-            </div>
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Website Name -->
+                <div class=" col-xl website-name d-none d-sm-block">
+                    <i class="bi bi-heart-pulse change-to-white"></i>
+                    Postal Pulse
+                </div>
 
-            <!-- Search Bar -->
-            <div class="col-xl input-group search-bar">
-                <span class="input-group-text">
-                    <i class="bi bi-search"></i>
-                </span>
-                <input class="search-input" type="text" placeholder="Search" />
-            </div>
+                <!-- Search Bar -->
+                <div class="col-xl input-group search-bar d-flex justify-content-center">
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input class="search-input" type="text" placeholder="Search" />
+                </div>
 
-            <!-- Settings -->
-            <div class="dropdown">
-                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-tools"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Acount</a></li>
-                    <li><a class="dropdown-item" href="#">Log out</a></li>
-                </ul>
+                <div class="col-xl d-flex justify-content-end">
+                    <!-- Settings -->
+                    <div class=" dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-tools"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Acount</a></li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                    <!-- Compose Button -->
+                    <button class="compose-button" type="submit">
+                        <i class="bi bi-pencil-square"></i> Compose
+                    </button>
+                </div>
             </div>
-
-            <!-- Compose Button -->
-            <button class="col-xs compose-button" type="submit">
-                <i class="bi bi-pencil-square"></i> Compose
-            </button>
         </div>
 
         <!-- The navigation lists, email lists, and an email message  -->
         <div class="row">
             <!-- Folders and Lists -->
-            <div class="col-md-2 mt-4 d-none d-sm-block navigation-lists">
+            <div class="col-md-2 col-lg-2 mt-4 vh-100 d-none d-sm-block">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="bi bi-inbox"></i> Inbox</li>
                     <li class="list-group-item"><i class="bi bi-send"></i> Sent</li>
-                    <li class="list-group-item"><i class="bi bi-pen"></i> Draft</li>
+                    <li class="list-group-item"><i class="bi bi-pen"></i> Draft <span class="badge bg-primary rounded-pill">2</span></li>
                     <li class="list-group-item"><i class="bi bi-star"></i> Starred</li>
                     <li class="list-group-item"><i class="bi bi-trash"></i> Trash</li>
                 </ul>
             </div>
 
             <!-- Inbox -->
-            <div class="col-md-4 mt-4 mx-4">
+            <div class="col-sm-12 col-md-3 col-lg-4 mt-4 vh-100 border-divider">
                 <div class="list-group inbox-box">
                     <a href="#"
                         class="list-group-item list-group-item-action list-group-item-danger border border-danger">
-                        <div class="inbox-subject">
-                            <h5 class="mb-1">Email Subject 1</h5>
-                            <small>3 days ago</small>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <h5 class="mb-1"><b>Lorem Ipsum</b></h5>
+                            <small><em>3 days ago</em></small>
                         </div>
-                        <h6 class="mb-1">Name</h6>
-                        <div class="inbox-subject">
-                            <p class="mb-1">Some sample text...</p>
+                        <h6 class="mb-1"><b>Jane Doe</b></h6>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
                             <i class="bi bi-star"></i>
                         </div>
                     </a>
 
                     <a href="#" class="list-group-item list-group-item-action border border-danger">
-                        <div class="inbox-subject">
-                            <h5 class="mb-1">Email Subject 2</h5>
-                            <small>3 days ago</small>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <h5 class="mb-1"><b>Testing, Testing</b></h5>
+                            <small><em>1 week ago</em></small>
                         </div>
-                        <h6 class="mb-1">Name</h6>
-                        <div class="inbox-subject">
-                            <p class="mb-1">Some sample text...</p>
+                        <h6 class="mb-1"><b>Miles Tone</b></h6>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <p class="mb-1">The quick brown fox jumps over the lazy dog...</p>
                             <i class="bi bi-star"></i>
                         </div>
                     </a>
 
                     <a href="#" class="list-group-item list-group-item-action border border-danger">
-                        <div class="inbox-subject">
-                            <h5 class="mb-1">Email Subject 3</h5>
-                            <small>3 days ago</small>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <h5 class="mb-1"><b>DRINK COFFEE</b></h5>
+                            <small><em>7/15/2024</em></small>
                         </div>
-                        <h6 class="mb-1">Name</h6>
-                        <div class="inbox-subject">
-                            <p class="mb-1">Some sample text...</p>
+                        <h6 class="mb-1"><b>Han Gout</b></h6>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <p class="mb-1">Arabica Acerbic Affogato Aftertaste Aged Americano And Aroma...</p>
                             <i class="bi bi-star-fill"></i>
                         </div>
                     </a>
 
                     <a href="#" class="list-group-item list-group-item-action border border-danger">
-                        <div class="inbox-subject">
-                            <h5 class="mb-1">Email Subject 4</h5>
-                            <small>3 days ago</small>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <h5 class="mb-1"><b>Let's Paint!</b></h5>
+                            <small><em>3/21/2023</em></small>
                         </div>
-                        <h6 class="mb-1">Name</h6>
-                        <div class="inbox-subject">
-                            <p class="mb-1">Some sample text...</p>
+                        <h6 class="mb-1"><b>Lance Bogrol</b></h6>
+                        <div class="d-flex mw-100 justify-content-between">
+                            <p class="mb-1">Trees get lonely too, so we'll give him a little friend...</p>
                             <i class="bi bi-star"></i>
                         </div>
                     </a>
@@ -120,26 +124,31 @@
             </div>
 
             <!-- Email Message -->
-            <div class="col-md-5 mt-4 d-none d-sm-block">
-                <div class="card">
+            <div class="col-md-7 col-lg-6 mt-4 vh-100 d-none d-sm-block border-divider">
+                <div class="vh-100 card border border-danger">
                     <div class="card-body">
-                        <h1 class="card-title">Email Subject</h1>
+                        <h1 class="card-title">Lorem Ipsum</h1>
 
-                        <div class=" message-pfp-border message-pfp"></div>
-                        <div class=" message-info-text">
-                            <h6 class="card-subtitle">Email sender</h6>
-                            <h6 class="card-subtitle">to: user</h6>
-                        </div>
-
-                        <div class="message-navigation">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="d-flex align-items-start">
+                                <div class="message-pfp-border message-pfp"></div>
+                                <div>
+                                    <h6 class="card-subtitle">Jane Doe (jdoe2000@email.com)</h6>
+                                    <h6 class="card-subtitle">to: John Smith (jsmith317@gmail.com)</h6>
+                                </div>
+                            </div>
                             <h6 class="card-subtitle">11:56 AM (10 hours ago)</h6>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-reply"></i>
-                            <i class="bi bi-forward"></i>
-                            <i class="bi bi-three-dots-vertical"></i>
                         </div>
 
-                        <p class="mt-4 card-text">Email body...</p>
+                        <p class="mt-4 card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis at consectetur. Amet risus nullam eget felis eget nunc lobortis. Gravida cum sociis natoque penatibus et magnis. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Purus sit amet luctus venenatis lectus magna fringilla. Viverra nibh cras pulvinar mattis nunc. Suscipit tellus mauris a diam maecenas sed enim ut. Sagittis purus sit amet volutpat consequat mauris. Tellus elementum sagittis vitae et leo duis.                        
+                        </p>
+                        
+                        
+                        <div class="d-flex justify-content-end gap-3">
+                            <button type="button" class="btn btn-primary">Reply</button>
+                            <button type="button" class="btn btn-warning">Forward</button>
+                        </div>
                     </div>
                 </div>
             </div>
