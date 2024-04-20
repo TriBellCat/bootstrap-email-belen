@@ -13,6 +13,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                         </ul>
                     </div>
                     <!-- Compose Button -->
-                    <button class="compose-button" type="submit">
+                    <button class="compose-button" type="submit" id="composeButton" onclick="sendMessage()">
                         <i class="bi bi-pencil-square"></i> Compose
                     </button>
                 </div>
@@ -63,12 +64,13 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="bi bi-inbox"></i> Inbox</li>
                     <li class="list-group-item"><i class="bi bi-send"></i> Sent</li>
-                    <li class="list-group-item"><i class="bi bi-pen"></i> Draft <span class="badge bg-primary rounded-pill">2</span></li>
+                    <li class="list-group-item"><i class="bi bi-pen"></i> Draft <span
+                            class="badge bg-primary rounded-pill">2</span></li>
                     <li class="list-group-item"><i class="bi bi-star"></i> Starred</li>
                     <li class="list-group-item"><i class="bi bi-trash"></i> Trash</li>
                 </ul>
             </div>
-            
+
             <!-- Inbox -->
             <div class="col-sm-12 col-md-4 col-lg-4 mt-4 border-divider">
                 <div class="list-group inbox-box">
@@ -80,7 +82,8 @@
                         </div>
                         <h6 class="mb-1"><b>Jane Doe</b></h6>
                         <div class="d-flex mw-100 justify-content-between">
-                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+                            </p>
                             <i class="bi bi-star"></i>
                         </div>
                     </a>
@@ -120,7 +123,7 @@
                             <i class="bi bi-star"></i>
                         </div>
                     </a>
-                    
+
                 </div>
             </div>
 
@@ -142,22 +145,36 @@
                         </div>
 
                         <p class="mt-5 card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis at consectetur. Amet risus nullam eget felis eget nunc lobortis. Gravida cum sociis natoque penatibus et magnis. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Purus sit amet luctus venenatis lectus magna fringilla. Viverra nibh cras pulvinar mattis nunc. Suscipit tellus mauris a diam maecenas sed enim ut. Sagittis purus sit amet volutpat consequat mauris. Tellus elementum sagittis vitae et leo duis.                        
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Augue eget arcu dictum varius duis at consectetur. Amet risus
+                            nullam eget felis eget nunc lobortis. Gravida cum sociis natoque penatibus et magnis.
+                            Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Purus sit amet
+                            luctus venenatis lectus magna fringilla. Viverra nibh cras pulvinar mattis nunc. Suscipit
+                            tellus mauris a diam maecenas sed enim ut. Sagittis purus sit amet volutpat consequat
+                            mauris. Tellus elementum sagittis vitae et leo duis.
                         </p>
-                        
+
                         <div class="d-flex justify-content-end gap-3">
-                            <button type="button" class="btn btn-primary">Reply</button>
-                            <button type="button" class="btn btn-warning">Forward</button>
+                            <button type="button" class="btn btn-primary" onclick="sendMessage()"><i
+                                    class="bi bi-reply"></i> Reply</button>
+                            <button type="button" class="btn btn-warning"><i class="bi bi-forward"></i> Forward</button>
                         </div>
 
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Email Message Form -->
+    <div class="form-group" id="emailComposeBox">
+        <label for="subject">Subject:</label>
+        <textarea class="form-control" id="subject" rows="1"></textarea>
+        <label for="send">Send to:</label>
+        <textarea class="form-control" id="send" rows="1"></textarea>
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+        <button type="button" class="btn btn-danger" onclick="sendMessage()">Send</button>
     </div>
 </body>
 

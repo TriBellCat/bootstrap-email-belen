@@ -6,13 +6,17 @@
     font-family: monospace;
 }
 
+#emailComposeBox {
+    display: none;
+}
+
 @media all and (max-width: 600px) {
+
     /*Hide border when in mobile mode*/
     .border-divider {
         border-left: transparent;
     }
 }
-
 
 /*Icons*/
 .bi {
@@ -21,7 +25,9 @@
     color: #ed5757;
 }
 
-.bi-heart-pulse {
+.bi-heart-pulse,
+.bi-reply,
+.bi-forward {
     color: white;
 }
 
@@ -31,7 +37,6 @@
 
 /*** Navigation Bar Elements ***/
 
-/*Navbar*/
 .navbar {
     background-color: #ed5757;
 }
@@ -75,4 +80,3 @@
 .message-pfp {
     background-image: url('https://www.stockvault.net/data/2010/11/24/116240/thumb16.jpg');
 }
-
